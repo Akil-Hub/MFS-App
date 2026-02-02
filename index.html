@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <title>MFS App</title>
+  </head>
+  <body class="bg-white text-black">
+    <!-- Main content start -->
+
+    <main class="flex justify-center items-center h-screen">
+      <article
+        id="loginScreen"
+        class="flex flex-col justify-center  items-center w-90 h-170 border border-gray-600 rounded-2xl"
+      >
+        <picture class="">
+          <img src="./src/assets/Group 1.png" alt="" />
+        </picture>
+
+        <section class="mb-30 -mt-40  z-10 " id="screen1">
+          <fieldset>
+            <label for="number" class="block text-xl font-semibold"
+              >Mobile Number:</label
+            >
+            <input
+              id="loginInput"
+              type="text"
+              placeholder="Enter you mobile number"
+              class="bg-gray-200 px-3 py-2 rounded-lg my-3 focus:outline-none text-black text-lg"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="number" class="block text-xl font-semibold">PIN:</label>
+            <input
+              id="loginPin"
+              type="text"
+              placeholder="Enter 4 Digit Pin"
+              class="bg-gray-200 px-3 py-2 rounded-lg my-3 focus:outline-none text-black text-lg"
+            />
+          </fieldset>
+
+          <div class="text-center mt-6">
+            <button
+            id="loginBtn"
+              class="bg-sky-600 px-7 py-2 rounded-lg text-white font-semibold text-lg btn"
+            >
+              Login
+            </button>
+          </div>
+        </section>
+        <div class="error absolute bottom-20  hidden" id="loginError">
+          <div role="alert" class="alert alert-error ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 shrink-0 stroke-current"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span>Error! Something went wrong..</span>
+          </div>
+        </div>
+
+
+   <!-- screen 2 start -->
+       <section class="mb-30 -mt-40  z-10 hidden     " id="screen2">
+
+        <h1 class="mb-20 text-xl font-semibold" id="">Available balance: <span id="balance">5000</span></h1>
+          <fieldset>
+            <label for="number" class="block text-xl font-semibold"
+              >Amount:</label
+            >
+            <input
+              id="amount"
+              type="text"
+              placeholder="Enter Amount"
+              class="bg-gray-200 px-3 py-2 rounded-lg my-3 focus:outline-none text-black text-lg"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="number" class="block text-xl font-semibold">PIN:</label>
+            <input
+              id="secondPin"
+              type="text"
+              placeholder="Enter 4 Digit Pin"
+              class="bg-gray-200 px-3 py-2 rounded-lg my-3 focus:outline-none text-black text-lg"
+            />
+          </fieldset>
+
+          <div class="text-center mt-6 flex gap-2 items-center">
+            <button
+            id="addMoney"
+              class="bg-sky-600 px-7 py-2 rounded-lg text-white font-semibold text-lg btn"
+            >
+              Add Money
+            </button>
+            <button
+            id="cashOut"
+              class="bg-sky-600 px-7 py-2 rounded-lg text-white font-semibold text-lg btn"
+            >
+              Cash Out
+            </button>
+          </div>
+        </section>
+    <!-- screen 2 end -->
+
+      </article>
+    </main>
+
+    <!-- Main content end -->
+
+
+ 
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
