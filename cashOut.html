@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <title>MFS App</title>
+  </head>
+  <body class="bg-white text-black">
+    <!-- Main content start -->
+
+    <main class="flex justify-center items-center h-screen">
+      <article
+        id="loginScreen"
+        class="flex flex-col justify-center  items-center w-90 h-170 border border-gray-600 rounded-2xl"
+      >
+        <picture class="">
+          <img src="./src/assets/Group 1.png" alt="" />
+        </picture>
+
+  
+
+
+   <!-- screen 2 start -->
+       <section class=" -mt-40  z-10      " id="screen2">
+
+        <h1 class="mb-10 text-center text-xl font-semibold" id="">Available balance: <span id="balance" class="text-3xl text-green-600 font-bold">5000</span></h1>
+         <div class="flex flex-col justify-center items-center mb-5">
+             <fieldset>
+            <label for="number" class="block text-xl font-semibold"
+              >Amount:</label
+            >
+            <input
+              id="amount"
+              type="text"
+              placeholder="Enter Amount"
+              class="bg-gray-200 px-3 py-2 rounded-lg my-3 focus:outline-none text-black text-lg"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="number" class="block text-xl font-semibold">PIN:</label>
+            <input
+              id="secondPin"
+              type="text"
+              placeholder="Enter 4 Digit Pin"
+              class="bg-gray-200 px-3 py-2 rounded-lg my-3 focus:outline-none text-black text-lg"
+            />
+          </fieldset>
+         </div>
+
+          <div class="text-center  flex flex-col gap-2 items-center  ">
+          <div>
+              <button
+            id="cashOut"
+              class="bg-green-600 px-12 py-2 rounded-lg text-white font-semibold text-lg btn"
+            >
+              Cash Out
+            </button>
+          
+          </div>
+         <div>
+               <button
+            id="home"
+              class="bg-sky-600 px-5 py-2 rounded-lg text-white font-semibold text-lg btn"
+            >
+              Back To Home
+            </button>
+            <button
+                id="menu"
+                class="bg-sky-600 px-5 py-2 rounded-lg text-white font-semibold text-lg btn"
+              >
+                Back To Menu
+              </button>
+         </div>
+
+            <p id="success" class="bg-green-500 px-4 py-3 text-xl mt-3 rounded-lg text-white font-bold  hidden">Cash Out Successful.</p>
+          </div>
+        </section>
+    <!-- screen 2 end -->
+
+      </article>
+    </main>
+
+    <!-- Main content end -->
+
+
+ 
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
